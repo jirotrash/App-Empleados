@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Administración de Empleados",
+    "slug": "AdEmpleados",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logoApp.jpg",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/logoApp.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#2B7FFF"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#2B7FFF"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.chuchoivan.AdEmpleados"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "90cd38d3-2dcd-4ef4-aa5d-9d464de3e496"
+      }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ]
+  },
+  "build": {
+    "production": {
+      "android": {
+        "image": "latest",
+        "buildType": "app-bundle"
+      },
+      "ios": {
+        "image": "latest",
+        "buildType": "release"
+      }
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": true
+      }
+    }
+  }
+}
